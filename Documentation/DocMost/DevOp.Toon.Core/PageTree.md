@@ -1,6 +1,6 @@
-# DevOp.Toon.Core DocMost Page Tree
+# DevOp.Toon.Core Legacy Page Tree
 
-Use this tree when creating the external DocMost space manually.
+Legacy DocMost export reference. Do not treat this file as the active publishing workflow; Wiki.js is the source of truth.
 
 1. Home
 2. Getting Started
@@ -10,4 +10,4 @@ Use this tree when creating the external DocMost space manually.
 6. Shared Enums Reference
 7. Target Frameworks and Package Notes
 
-Suggested publishing order matches the numeric Markdown filenames in this folder.
+The numeric Markdown filenames in this folder reflect the older export order.

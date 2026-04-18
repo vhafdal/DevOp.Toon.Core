@@ -42,6 +42,6 @@ Then validate:
 Start with:
 
 - `README.md`
-- external DocMost pages
+- live Wiki.js pages when public documentation is affected
 
 Keep the boundary clear: this package is for contracts and shared enums, not runtime serialization behavior.

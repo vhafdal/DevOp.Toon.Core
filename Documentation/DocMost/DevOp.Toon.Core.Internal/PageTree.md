@@ -1,6 +1,6 @@
-# DevOp.Toon.Core Internal Development Space
+# DevOp.Toon.Core Internal Legacy Page Tree
 
-Use this tree for an internal engineering-focused DocMost space.
+Legacy internal export reference. Do not treat this file as the active publishing workflow; Wiki.js is the source of truth.
 
 1. Home
 2. Architecture Overview
@@ -8,4 +8,4 @@ Use this tree for an internal engineering-focused DocMost space.
 4. Build and Packaging
 5. Change Cookbook
 
-Suggested publishing order matches the numeric Markdown filenames in this folder.
+The numeric Markdown filenames in this folder reflect the older export order.

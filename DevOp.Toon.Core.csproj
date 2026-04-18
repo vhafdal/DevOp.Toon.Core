@@ -9,12 +9,12 @@
     <AssemblyName>DevOp.Toon.Core</AssemblyName>
 
     <PackageId>DevOp.Toon.Core</PackageId>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <Authors>Þorvaldur Hafdal</Authors>
     <Company>DevOp</Company>
     <Description>Core TOON contracts for .NET, including DTO annotations and shared configuration enums.</Description>
     <PackageTags>toon;contracts;annotations;dto;serialization</PackageTags>
-    <PackageProjectUrl>https://devop-team.atlassian.net/wiki/x/r4Aq</PackageProjectUrl>
+    <PackageProjectUrl>https://wiki.devop.is/devop-toon-core/getting-started</PackageProjectUrl>
     <RepositoryUrl>https://github.com/vhafdal/DevOp.Toon.Core</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
