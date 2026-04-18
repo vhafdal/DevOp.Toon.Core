@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net8.0;net9.0;netstandard2.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>DevOp.Toon.Core</RootNamespace>
+    <AssemblyName>DevOp.Toon.Core</AssemblyName>
+
+    <PackageId>DevOp.Toon.Core</PackageId>
+    <Version>0.1.2</Version>
+    <Authors>Þorvaldur Hafdal</Authors>
+    <Company>DevOp</Company>
+    <Description>Core TOON contracts for .NET, including DTO annotations and shared configuration enums.</Description>
+    <PackageTags>toon;contracts;annotations;dto;serialization</PackageTags>
+    <PackageProjectUrl>https://devop-team.atlassian.net/wiki/x/r4Aq</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vhafdal/DevOp.Toon.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DevOp.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
+    <Title>DevOp Toon Core</Title>
+    <Copyright>Þorvaldur Hafdal(DevOp)</Copyright>
+    <PackageIcon>Assets\DevOp.Toon.Core-128.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\DevOp.Toon.Core-128.png" Pack="true" PackagePath="Assets\" />
+  </ItemGroup>
+
+</Project>
