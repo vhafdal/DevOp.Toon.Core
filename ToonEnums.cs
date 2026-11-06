@@ -44,9 +44,44 @@ public enum ToonPathExpansion
 /// </summary>
 public enum ToonObjectArrayLayout
 {
-    /// <summary>Use classic behavior and only tabularize fully primitive rows.</summary>
+    /// <summary>Use the selected protocol's standard object-array layout.</summary>
+    /// <remarks>Official v4 supports uniform nested-object columns; legacy profiles tabularize primitive-only rows.</remarks>
     Auto,
 
-    /// <summary>Use shared primitive columns as a tabular header and spill complex fields below each row.</summary>
+    /// <summary>Use shared columns and complex-field spills according to the selected custom protocol.</summary>
+    /// <remarks>The new custom profile supports nested groups and keyed-table spills. Official protocol encoders reject this layout.</remarks>
     Columnar
+}
+
+/// <summary>
+/// Specifies the TOON protocol version.
+/// </summary>
+public enum ToonProtocolVersion
+{
+    /// <summary>Automatically detect protocol version during decoding.</summary>
+    Auto = 0,
+
+    /// <summary>Official TOON specification version 3.0.</summary>
+    V3_0 = 300,
+
+    /// <summary>Official TOON specification version 4.0.</summary>
+    V4_0 = 400,
+
+    /// <summary>Official TOON specification version 4.1.</summary>
+    V4_1 = 401,
+
+    /// <summary>Official TOON specification version 4.2.</summary>
+    V4_2 = 402,
+
+    /// <summary>Official TOON specification version 4.3.</summary>
+    V4_3 = 403,
+
+    /// <summary>Official TOON specification version 4.4.</summary>
+    V4_4 = 404,
+
+    /// <summary>DevOp custom legacy TOON protocol.</summary>
+    CustomLegacy = 10000,
+
+    /// <summary>DevOp custom TOON specification version 4.4.</summary>
+    CustomV4_4 = 10404
 }
