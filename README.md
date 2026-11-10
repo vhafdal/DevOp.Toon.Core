@@ -2,11 +2,12 @@
 
 `DevOp.Toon.Core` is the lightweight contracts package for TOON-based .NET applications.
 
-**Version scope:** this guide covers Core 0.2.0.
+**Version scope:** this guide covers Core 0.3.0.
 
 Use this package when a shared models assembly only needs:
 
 - `ToonPropertyNameAttribute` for DTO field naming
+- `ToonExtensionDataAttribute` for capturing keys that have no DTO member
 - shared TOON enums such as `ToonDelimiter`, `ToonKeyFolding`, `ToonPathExpansion`, and `ToonObjectArrayLayout`
 - `ToonProtocolVersion` and `ToonProtocolVersions` for explicit version selection and transport names
 
@@ -32,6 +33,23 @@ public sealed class ProductDto
     public string Name { get; init; } = string.Empty;
 }
 ```
+
+Keys that describe the document rather than the domain, such as `@id` or `@metadata`, can be kept
+out of the DTO's members with an extension-data property:
+
+```csharp
+public sealed class AccountDto
+{
+    public string Name { get; set; } = string.Empty;
+
+    [ToonExtensionData]
+    public IDictionary<string, object?>? Annotations { get; set; }
+}
+```
+
+On decode, keys that bind to no member are captured in the dictionary; on encode, its entries are
+written after the declared members. A member wins over an entry with the same name. Runtime support
+and protocol-version scope are described in the `DevOp.Toon` documentation.
 
 You can also reference the shared enums from application or configuration code:
 
