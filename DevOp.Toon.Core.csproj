@@ -9,7 +9,7 @@
     <AssemblyName>DevOp.Toon.Core</AssemblyName>
 
     <PackageId>DevOp.Toon.Core</PackageId>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <Authors>Þorvaldur Hafdal</Authors>
     <Company>DevOp</Company>
     <Description>Core TOON contracts for .NET, including DTO annotations and shared configuration enums.</Description>
@@ -19,10 +19,9 @@
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageReleaseNotes>Adds explicit TOON protocol version contracts.
-- Adds ToonProtocolVersion values for official 3.0, 4.0 through 4.4, and custom profiles
-- Adds transport version parsing and formatting helpers
-- Improves shared enum documentation for automatic detection and custom columnar layouts</PackageReleaseNotes>
+    <PackageReleaseNotes>Adds the extension-data contract for keys that have no DTO member.
+- Adds ToonExtensionDataAttribute for an IDictionary&lt;string, object?&gt; property that captures unmatched keys on decode and writes them after declared members on encode
+- Requires a DevOp.Toon runtime that supports extension data; earlier runtimes ignore the attribute</PackageReleaseNotes>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <SignAssembly>true</SignAssembly>
